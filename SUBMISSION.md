@@ -16,7 +16,7 @@ Three variables—`weight` (96.9% missing), `baseline_anxiety_score` (94.7%), an
 - `'?'` and `'None'` were converted to `NaN`.
 - For `followup_anxiety_score`, a binary flag was created indicating whether it was recorded, capturing behavioral or operational patterns behind missing data.
 
-![missing_data](/Users/kevin/Developer/MedLink/hospital-readmission-predictors/visualizations/missing_data.png)
+![missing_data](./visualizations/missing_data.png)
 
 **Initial Insights**  
 A preliminary descriptive analysis revealed several trends:
@@ -27,7 +27,7 @@ A preliminary descriptive analysis revealed several trends:
 
 These findings suggested that both chronicity and care intensity are central to readmission risk.
 
-![prior_visits](/Users/kevin/Developer/MedLink/hospital-readmission-predictors/visualizations/prior_visits.png)
+![prior_visits](./visualizations/prior_visits.png)
 
 ---
 
@@ -66,7 +66,7 @@ Among the evaluated models, **XGBoost** achieved the strongest balance of interp
 | XGBoost (default threshold 0.5)        | 0.641    | 0.693     | —         | 0.614     | 0.611     | —                                                            |
 | **XGBoost (Improved, threshold 0.40)** | 0.538    | **0.695** | 0.499     | **0.939** | **0.652** | False negatives ↓ ~84% (3,074 → 488); false positives ↑ (3,135 → 7,500) |
 
-![model_comparison](/Users/kevin/Developer/MedLink/hospital-readmission-predictors/visualizations/model_comparison.png)
+![model_comparison](./visualizations/model_comparison.png)
 
 ---
 
