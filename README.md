@@ -1,3 +1,13 @@
+# How to Use This Project
+
+1. Install requirements via pip and requirements.txt
+2. Place `anxiety_disorder_admission_data.csv` into the Data folder
+3. Run the notebooks in the following order: EDA -> Data Cleaning/Feature Engineering -> Modeling
+
+My write-up can either be read in the markdown file or the pdf
+
+Thanks!
+
 # Data Science Take-Home Assignment: Predicting Hospital Readmissions
 
 ### Introduction & Business Context
