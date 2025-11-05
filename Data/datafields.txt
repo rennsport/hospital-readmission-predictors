@@ -1,0 +1,29 @@
+Data fields
+- encounter_id: Unique identifier of an encounter
+- patient_nbr: Unique identifier of a patient
+- race: Values: Caucasian, Asian, African American, Hispanic, and other
+- gender: Values: male, female, and unknown/invalid
+- age: Grouped in 10-year intervals: 0, 10), 10, 20), …, 90, 100)
+- weight: Weight in pounds.
+- admission_type_id: Integer identifier corresponding to 9 distinct values, for example, emergency, urgent, elective, newborn, and not available
+- discharge_disposition_id: Integer identifier corresponding to 29 distinct values, for example, discharged to home, expired, and not available
+- admission_source_id: Integer identifier corresponding to 21 distinct values, for example, physician referral, emergency room, and transfer from a hospital
+- time_in_hospital: Integer number of days between admission and discharge
+- payer_code: Integer identifier corresponding to 23 distinct values, for example, Blue Cross/Blue Shield, Medicare, and self-pay
+- psychiatric_specialty: Integer identifier of a specialty of the admitting physician, corresponding to 84 distinct values, for example, cardiology, internal medicine, family/general practice, and surgeon
+- num_lab_procedures: Number of lab tests performed during the encounter
+- num_procedures: Number of procedures (other than lab tests) performed during the encounter
+- num_medications: Number of distinct generic names administered during the encounter
+- number_outpatient: Number of outpatient visits of the patient in the year preceding the encounter
+- number_emergency: Number of emergency visits of the patient in the year preceding the encounter
+- number_inpatient: Number of inpatient visits of the patient in the year preceding the encounter
+- diag_1: The primary diagnosis (coded as first three digits of ICD9)
+- diag_2: Secondary diagnosis (coded as first three digits of ICD9)
+- diag_3: Additional secondary diagnosis (coded as first three digits of ICD9)
+- number_diagnoses: Number of diagnoses entered to the system
+- anxiety_score_1: Indicates the range of the result or if the test was not taken. Values: “>200,” “>300,” “normal,” and “none” if not measured
+- anxiety_score_2: Indicates the range of the result or if the test was not taken. Values: “>8” if the result was greater than 8%, “>7” if the result was greater than 7% but less than 8%, “normal” if the result was less than 7%, and “none” if not measured.
+- change: Indicates if there was a change in psychiatric treatment plan (either dosage or generic name). Values: “change” and “no change”
+- psychMed: Indicates if there was any psychiatric medication prescribed. Values: “yes” and “no”
+- 23 features for medications: For the generic names: sertraline, escitalopram, fluoxetine, paroxetine, venlafaxine, duloxetine, buspirone, clonazepam, alprazolam, lorazepam, diazepam, hydroxyzine, propranolol, pregabalin, gabapentin, trazodone, mirtazapine, psychotherapy, sertraline-buspirone, escitalopram-clonazepam, venlafaxine-lorazepam, sertraline-diazepam, sertraline-lorazepam, the feature indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed
+- Readmitted: Days to inpatient readmission. Values: “<30” if the patient was readmitted in less than 30 days, “>30” if the patient was readmitted in more than 30 days, and “No” for no record of readmission.
